@@ -152,12 +152,12 @@
             "raycast",
             "spotify",
             "textmate",
-            "nextdns",
             "visual-studio-code",
             "linear-linear",
             "iterm2",
+            
         ]
-        formulae = []
+        formulae = ["nextdns"]
 [packages.mas]
     [packages.mas.common]
         apps = []

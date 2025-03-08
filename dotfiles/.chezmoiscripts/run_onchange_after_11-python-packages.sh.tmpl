@@ -28,25 +28,6 @@ packages=(
     {{ end }}
 )
 
-{{ if .use_secrets }}
-
-# Replace GITEA_ADDRESS with the actual value
-gitea_address_secret="{{- onepasswordRead .secrets.gitea_address }}"
-for i in "${!packages[@]}"; do
-    packages[$i]="${packages[$i]/GITEA_ADDRESS/$gitea_address_secret}"
-done
-
-{{ else }}
-
-# remove any array items which contain the string "GITEA_ADDRESS"
-regex_pattern=".*GITEA_ADDRESS.*"
-for i in ${!packages[@]}; do
-    if [[ ${packages[$i]} =~ ${regex_pattern} ]]; then
-        unset packages[$i]
-    fi
-done
-
-{{ end }}
 
 UV_PATH="$(_uvBinaryPath_)" || {
     error "uv is not installed"

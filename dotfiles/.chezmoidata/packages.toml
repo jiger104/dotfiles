@@ -106,6 +106,8 @@
             # "sourcetree", # Alternative to fork
             "lingon-x",
             "google-cloud-sdk",
+                        "helix"
+
             
             
         ]
@@ -154,7 +156,6 @@
             "visual-studio-code",
             "linear-linear",
             "iterm2",
-            "helix"
         ]
         formulae = []
 [packages.mas]

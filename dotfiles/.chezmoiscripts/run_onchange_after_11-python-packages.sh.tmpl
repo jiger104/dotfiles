@@ -28,6 +28,11 @@ packages=(
     {{ end }}
 )
 
+# Check if there are any packages to install
+if [ ${#packages[@]} -eq 0 ]; then
+    echo "No Python packages to install"
+    _safeExit_ 0
+fi
 
 UV_PATH="$(_uvBinaryPath_)" || {
     error "uv is not installed"

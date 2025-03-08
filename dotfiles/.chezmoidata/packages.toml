@@ -155,9 +155,10 @@
             "visual-studio-code",
             "linear-linear",
             "iterm2",
+            "meetingbar","bartender"
             
         ]
-        formulae = ["nextdns", "meetingbar","bartender"]
+        formulae = ["nextdns", ]
 [packages.mas]
     [packages.mas.common]
         apps = []

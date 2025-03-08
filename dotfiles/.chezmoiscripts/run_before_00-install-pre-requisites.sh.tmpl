@@ -10,6 +10,7 @@ if [[ ! $(command -v brew) ]]; then
 fi
 
 # Reload shell after installing Homebrew
+exec ${SHELL} -l
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 {{ end }}

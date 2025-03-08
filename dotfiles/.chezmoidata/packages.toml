@@ -122,9 +122,9 @@
             "libpq",      # PostgreSQL utilities but not postgresql itself
             "shellcheck",
             "shfmt",
-            "dopplerhq/cli/doppler",
-            "supabase/tap/supabase",
-            "depot/tap/depot",
+            "doppler",
+            "supabase",
+            "depot",
             "autojump"
 
             
@@ -153,7 +153,8 @@
             "nextdns",
             "visual-studio-code",
             "linear-linear",
-            "iterm2"
+            "iterm2",
+            "helix"
         ]
         formulae = []
 [packages.mas]

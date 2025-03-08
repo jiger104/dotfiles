@@ -55,8 +55,18 @@ casks=(
     {{ end }}
 )
 
-currently_installed_formulae=($(brew list --formula -1))
-currently_installed_casks=($(brew list --cask -1))
+# Initialize empty arrays to avoid issues with unbound variables
+currently_installed_formulae=()
+currently_installed_casks=()
+
+# Safely populate arrays with installed packages if any exist
+if brew list --formula &>/dev/null; then
+    mapfile -t currently_installed_formulae < <(brew list --formula -1)
+fi
+
+if brew list --cask &>/dev/null; then
+    mapfile -t currently_installed_casks < <(brew list --cask -1)
+fi
 
 header "Install Homebrew packages"
 

@@ -9,9 +9,6 @@ if [[ ! $(command -v brew) ]]; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-# Reload shell after installing Homebrew
-exec ${SHELL} -l
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 {{ end }}
 

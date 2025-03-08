@@ -18,7 +18,10 @@
     xdgStateDir       = "{{ .chezmoi.homeDir }}/.local/state"
 
 [diff]
-	exclude = ["scripts"]
+    {{ if lookPath "delta" -}}command = "delta"
+    {{ end -}}
+    exclude = ["scripts"]
+
 
 {{ if lookPath "code" -}}
 [edit]

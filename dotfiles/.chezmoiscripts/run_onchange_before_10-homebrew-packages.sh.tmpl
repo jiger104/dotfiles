@@ -61,12 +61,16 @@ currently_installed_casks=()
 
 # Safely populate arrays with installed packages if any exist
 if brew list --formula &>/dev/null; then
-    mapfile -t currently_installed_formulae < <(brew list --formula -1)
+    # Use readarray/mapfile with proper error handling
+    readarray -t currently_installed_formulae < <(brew list --formula -1 || echo "")
 fi
 
 if brew list --cask &>/dev/null; then
-    mapfile -t currently_installed_casks < <(brew list --cask -1)
+    readarray -t currently_installed_casks < <(brew list --cask -1 || echo "")
 fi
+
+# Enable safe array expansion
+set -o nounset
 
 header "Install Homebrew packages"
 
@@ -74,8 +78,8 @@ brew update
 
 BREW_DIR="$(brew --prefix)/bin/"
 
-for formula in ${formulae[@]}; do
-    if ! _inArray_ -i "${formula}" "${currently_installed_formulae[@]}"; then
+for formula in "${formulae[@]:-}"; do
+    if ! _inArray_ -i "${formula}" "${currently_installed_formulae[@]:-}"; then
         if [[ ! -e "${BREW_DIR}/${formula}" ]]; then
             echo "Installing formula: ${formula}"
             brew install -q --formula ${formula} || {
@@ -92,8 +96,8 @@ for formula in ${formulae[@]}; do
 done
 
 {{ if not .is_ci_workflow }}
-for cask in ${casks[@]}; do
-    if ! _inArray_ -i "${cask}" "${currently_installed_casks[@]}"; then
+for cask in "${casks[@]:-}"; do
+    if ! _inArray_ -i "${cask}" "${currently_installed_casks[@]:-}"; then
         echo "Installing cask: ${cask}"
         brew install -q --cask ${cask} || {
             echo "Failed to install ${cask}, continuing with next package..."

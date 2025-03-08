@@ -1,0 +1,10 @@
+[remote_servers]
+
+
+    [remote_servers.git]
+        add_to_ssh_config = false
+        name              = "git"
+        op_id             = "6pzpgnpqpk6ss25cnskbysxcv4"
+        tailscale_ip      = false
+
+    

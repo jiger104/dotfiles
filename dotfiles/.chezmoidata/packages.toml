@@ -157,7 +157,7 @@
             "iterm2",
             
         ]
-        formulae = ["nextdns"]
+        formulae = ["nextdns", "meetingbar","bartender"]
 [packages.mas]
     [packages.mas.common]
         apps = []

@@ -61,12 +61,12 @@ currently_installed_casks=()
 
 # Safely populate arrays with installed packages if any exist
 if brew list --formula &>/dev/null; then
-    # Use readarray/mapfile with proper error handling
-    readarray -t currently_installed_formulae < <(brew list --formula -1 || echo "")
+    # Use basic array assignment for better compatibility
+    currently_installed_formulae=( $(brew list --formula -1 || echo "") )
 fi
 
 if brew list --cask &>/dev/null; then
-    readarray -t currently_installed_casks < <(brew list --cask -1 || echo "")
+    currently_installed_casks=( $(brew list --cask -1 || echo "") )
 fi
 
 # Enable safe array expansion

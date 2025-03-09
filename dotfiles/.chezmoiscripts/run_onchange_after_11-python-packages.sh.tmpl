@@ -28,9 +28,10 @@ packages=(
     {{ end }}
 )
 
-# Check if there are any packages to install
+# Exit early if no packages are defined
 if [ ${#packages[@]} -eq 0 ]; then
     echo "No Python packages to install"
+    success "Python packages check complete"
     _safeExit_ 0
 fi
 
@@ -42,7 +43,10 @@ UV_PATH="$(_uvBinaryPath_)" || {
 if [[ -n ${UV_PATH} ]]; then
     # Install the packages with uv
     for package in "${packages[@]}"; do
-        ${UV_PATH} tool install "${package}"
+        ${UV_PATH} tool install "${package}" || {
+            echo "Failed to install ${package}, continuing with next package..."
+            continue
+        }
     done
 fi
 

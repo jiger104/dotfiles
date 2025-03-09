@@ -57,9 +57,6 @@
             "font-meslo-lg-dz",
             "font-meslo-lg-nerd-font",
             "iterm2",                        # Terminal emulator
-            "jordanbaird-ice",               # Menu bar customization
-            "lingon-x",
-            "tailscale",
         ]
         formulae = [
             "atuin",           # Better shell history

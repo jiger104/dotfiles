@@ -1,0 +1,35 @@
+{
+  "isOnboardedToMediaPage" : true,
+  "lastSelectedHomePage" : "DownloadsPage",
+  "version" : 1,
+  "preferences" : {
+    "dataSourcePreferences" : [
+      "desktop",
+      true,
+      "download",
+      true,
+      "capture",
+      true,
+      "screenshot",
+      true,
+      "documents",
+      true
+    ]
+  },
+  "permissions" : {
+    "folderToPermissions" : [
+      "file:\/\/\/Users\/jigar\/Desktop\/",
+      {
+        "hasPermissions" : true
+      },
+      "file:\/\/\/Users\/jigar\/Documents\/",
+      {
+        "hasPermissions" : true
+      },
+      "file:\/\/\/Users\/jigar\/Downloads\/",
+      {
+        "hasPermissions" : true
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version" : 1,
+  "mapping" : {
+    "keysToValues" : [
+      {
+        "browser" : {
+          "contextID" : {
+            "profile" : {
+              "custom" : {
+                "_0" : {
+                  "directoryBasename" : "Profile 1",
+                  "machineID" : "DA833C6D-3461-4A35-B34E-FE235638CCF8"
+                }
+              }
+            },
+            "contextType" : {
+              "normal" : {
+
+              }
+            }
+          },
+          "windowID" : "358703E7-BA92-4E6C-ADF5-833A852A9754"
+        },
+        "itemId" : "EBF2B458-FD14-4810-9C17-37CFA53B03D3"
+      },
+      1429520186
+    ]
+  }
+}

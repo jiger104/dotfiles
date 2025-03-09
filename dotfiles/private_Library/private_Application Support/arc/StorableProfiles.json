@@ -1,0 +1,32 @@
+{
+  "profiles" : [
+    {
+      "id" : {
+        "default" : {
+
+        }
+      }
+    },
+    {
+      "id" : {
+        "custom" : {
+          "_0" : {
+            "directoryBasename" : "Profile 1",
+            "machineID" : "DA833C6D-3461-4A35-B34E-FE235638CCF8"
+          }
+        }
+      }
+    },
+    {
+      "id" : {
+        "custom" : {
+          "_0" : {
+            "directoryBasename" : "Profile 2",
+            "machineID" : "DA833C6D-3461-4A35-B34E-FE235638CCF8"
+          }
+        }
+      }
+    }
+  ],
+  "version" : 3
+}

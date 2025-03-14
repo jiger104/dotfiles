@@ -6,9 +6,10 @@ README.md
 # https://www.chezmoi.io/user-guide/manage-machine-to-machine-differences/#ignore-files-or-a-directory-on-different-machines
 
 {{ if ne .chezmoi.os "darwin" }}
-Library/Application Support
-Library
+Library/Application Support/*
+Library/*
 .config/applications
+.zcompdump
 {{ end }}
 
 {{ if ne .chezmoi.os "linux" }}

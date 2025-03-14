@@ -101,7 +101,6 @@
             "cursor",
             "fork",
             # "sourcetree", # Alternative to fork
-            "lingon-x",
             "google-cloud-sdk",
 
             
@@ -124,7 +123,8 @@
             "supabase",
             "depot",
             "autojump",
-            "helix"
+            "helix",
+            "npm"
 
             
         ]
@@ -152,10 +152,14 @@
             "visual-studio-code",
             "linear-linear",
             "iterm2",
-            "meetingbar","bartender"
+            "meetingbar",
+            "bartender",
+            "alt-tab",
+            "coder",
+            "wifiman"
             
         ]
-        formulae = ["nextdns", ]
+        formulae = ["nextdns" ]
 [packages.mas]
     [packages.mas.common]
         apps = []

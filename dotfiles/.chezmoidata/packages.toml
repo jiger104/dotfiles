@@ -57,6 +57,7 @@
             "font-meslo-lg-dz",
             "font-meslo-lg-nerd-font",
             "iterm2",                        # Terminal emulator
+            "docker"
         ]
         formulae = [
             "atuin",           # Better shell history

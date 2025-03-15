@@ -10,6 +10,8 @@ Library/Application Support/*
 Library/*
 .config/applications
 .zcompdump
+.zsh_history
+.lesshst
 {{ end }}
 
 {{ if ne .chezmoi.os "linux" }}

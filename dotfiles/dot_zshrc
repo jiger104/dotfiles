@@ -10,6 +10,9 @@ export BREW_DIR=$(brew --prefix)
 [ -f $BREW_DIR/etc/profile.d/autojump.sh ] && . $BREW_DIR/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 
+# Load FZF
+source <(fzf --zsh)
+
 
 # Load powerlevel10k
 source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
@@ -45,5 +48,3 @@ source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completio
 
 
 
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

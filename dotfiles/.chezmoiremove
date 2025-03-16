@@ -1,4 +1,3 @@
-.DS_Store
 
 # Prepend with a `/` to specify a specific path relative to $HOME.
 
@@ -7,10 +6,8 @@
 /.gitignore
 /.gitconfig
 /.nanorc
-/.lesshst
 /.digrc
 /.wget-hsts
-/.zcompdump
 /.python_history
 /.local/share/zsh/history
 /.sed/htmlDecode.sed
@@ -18,4 +15,4 @@
 /.sed/stopwords.sed
 /.zsh_history
 /.yamllint.yml
-/.git_stop_words
+/.DS_Store

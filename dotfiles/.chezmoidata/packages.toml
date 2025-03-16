@@ -94,14 +94,13 @@
             "wget",
             "zoxide",          # A faster way to navigate your filesystem
             "zsh",
-            "powerlevel10k"
+            "powerlevel10k",
+            "ffmpeg"
         ]
     [packages.homebrew.dev_computer]
         casks = [
             "bruno",
             "cursor",
-            "fork",
-            # "sourcetree", # Alternative to fork
             "google-cloud-sdk",
 
             
@@ -150,17 +149,16 @@
             "raycast",
             "spotify",
             "textmate",
-            "visual-studio-code",
             "linear-linear",
             "iterm2",
             "meetingbar",
             "bartender",
             "alt-tab",
-            "coder",
-            "wifiman"
+            "wifiman",
+
             
         ]
-        formulae = ["nextdns" ]
+        formulae = ["nextdns", "coder" ]
 [packages.mas]
     [packages.mas.common]
         apps = []

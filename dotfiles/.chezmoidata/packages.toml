@@ -158,7 +158,7 @@
 
             
         ]
-        formulae = ["nextdns", "coder" ]
+        formulae = ["nextdns", "coder", "zsh-autosuggestions" ]
 [packages.mas]
     [packages.mas.common]
         apps = []

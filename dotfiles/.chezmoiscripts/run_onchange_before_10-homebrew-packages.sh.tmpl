@@ -3,9 +3,9 @@
 
 {{ template "shared_script_utils.bash" . }}
 
-export HOMEBREW_NO_INSTALL_UPGRADE=TRUE
+export HOMEBREW_NO_INSTALL_UPGRADE=FALSE
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export HOMEBREW_NO_INSTALL_CLEANUP=1
+export HOMEBREW_NO_INSTALL_CLEANUP=0
 
 formulae=(
     {{ range $package := .packages.homebrew.common.formulae }}

@@ -10,7 +10,7 @@ source $HOME/.config/zsh/.functions.sh
 
 
 
-DISABLE_UPDATE_PROMPT="true"
+
 
 plugins=(git z)
 

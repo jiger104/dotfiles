@@ -12,3 +12,4 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 alias zshconfig="chezmoi edit ~/.zshrc"
 alias cm='chezmoi "$@"'
+alias uuidl="uuidgen | tr '[:upper:]' '[:lower:]'"

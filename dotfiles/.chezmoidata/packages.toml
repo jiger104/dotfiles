@@ -57,7 +57,6 @@
             "font-meslo-lg-dz",
             "font-meslo-lg-nerd-font",
             "iterm2",                        # Terminal emulator
-            "docker"
         ]
         formulae = [
             "atuin",           # Better shell history
@@ -95,13 +94,18 @@
             "zoxide",          # A faster way to navigate your filesystem
             "zsh",
             "powerlevel10k",
-            "ffmpeg"
+            "ffmpeg",
+            "python",
+            "terraform"
         ]
     [packages.homebrew.dev_computer]
         casks = [
             "bruno",
             "cursor",
             "google-cloud-sdk",
+            "github",
+                        "orbstack"
+
 
             
             
@@ -124,7 +128,10 @@
             "depot",
             "autojump",
             "helix",
-            "npm"
+            "npm",
+                        "flyctl",
+                        "oven-sh/bun/bun"
+
 
             
         ]
@@ -141,7 +148,6 @@
             "zoom",
             "ngrok",
             "rectangle",
-            "insomnia",
             "1password",
             "cursor",
             "betterdisplay",
@@ -155,10 +161,14 @@
             "bartender",
             "alt-tab",
             "wifiman",
+            "devutils",
+            "orbstack",
+            "yaak",
+            "calibre"
 
             
         ]
-        formulae = ["nextdns", "coder", "zsh-autosuggestions" ]
+        formulae = [ "coder", "vercel-cli", "supabase", "atuin" ]
 [packages.mas]
     [packages.mas.common]
         apps = []
